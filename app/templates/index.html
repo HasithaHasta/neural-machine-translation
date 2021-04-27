@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Translater </title>
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+
+<body>
+  <div id = "center">
+    <p>
+      Neural Machine Translation
+    </p>
+
+    <div id = "center">
+      <form action='/translate' method="POST">
+        <input id = "textboxid" type='text' name="text">
+        <br>
+        <button type="submit" onClick={onButtonSubmit}> Translate </button>
+      </form>
+    </div>
+
+    <div id="center">
+      <textarea id="translation">{{translation}}</textarea>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
